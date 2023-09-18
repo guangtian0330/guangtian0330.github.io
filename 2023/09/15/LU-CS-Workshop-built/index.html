@@ -1,155 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>LU CS Workshop built - Guangtian&#039;s BLOG</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="Tian&#039;s Blog"><meta name="msapplication-TileImage" content="/img/logo.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Tian&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Abstract:"><meta property="og:type" content="blog"><meta property="og:title" content="LU CS Workshop built"><meta property="og:url" content="http://example.com/2023/09/15/LU-CS-Workshop-built/"><meta property="og:site_name" content="Peaceland"><meta property="og:description" content="Abstract:"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://example.com/img/og_image.png"><meta property="article:published_time" content="2023-09-15T19:38:54.000Z"><meta property="article:modified_time" content="2023-09-18T14:43:08.066Z"><meta property="article:author" content="Guangtian"><meta property="article:tag" content="-Teambuilding -Workshop"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://example.com/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2023/09/15/LU-CS-Workshop-built/"},"headline":"LU CS Workshop built","image":["http://example.com/img/og_image.png"],"datePublished":"2023-09-15T19:38:54.000Z","dateModified":"2023-09-18T14:43:08.066Z","author":{"@type":"Person","name":"Guangtian"},"publisher":{"@type":"Organization","name":"Guangtian's BLOG","logo":{"@type":"ImageObject","url":"http://example.com/img/logo.svg"}},"description":"Abstract:"}</script><link rel="canonical" href="http://example.com/2023/09/15/LU-CS-Workshop-built/"><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
 
-<head>
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal theme">
-    <meta name="author" content="iblogger.ca">
-    <link href='/img/favicon.png' type='image/x-icon' rel='shortcut icon'/>
-    <title>Personal Theme</title>
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
 
-	 
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-
-    
-    <!--morris-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-	
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css" rel="stylesheet">
-	
-    <!-- Custom Fonts -->
-	 
-<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Custom CSS -->
-	
-	 
-<link rel="stylesheet" href="/css/mywebsite.css">
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	
-
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-
-<body>
-	<div id="wrapper">
-		 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Personal Theme</a>
-            </div>
-
-             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/">Home</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/about">about</a>
-                    </li>
-					<li class="page-scroll">
-                        <a href="/categories/blog">Blog</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-		
-		<!-- Main content -->
-			
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
-                            
-    
-      <div class="text-center">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      LU CS Workshop built
-    </h1>
-  
-
-      </div>
-    
-	<div class="text-center">
-		
-
-	</div>
-
-
-
-						  <div class="article-meta">
-    
-<p class="post-meta">
-<span class="name">By Guangtian</span>
-</p>
-<p class="article-date">
-  <time datetime="2023-09-15T19:38:54.000Z" itemprop="datePublished">On 2023-09-15</time>
-</p>
-
-
-
-  </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-<section id="blog">	
-<div class="container post-content">
-	<div class="row">
-        <div class="box">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="intro-text text-center" style="padding-top: 10px; padding-bottom: 30px;">
-					</div>
-					<article id="post-LU-CS-Workshop-built" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Abstract:</p>
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="Guangtian&#039;s BLOG" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2023-09-15T19:38:54.000Z" title="2023/9/15 15:38:54">2023-09-15</time></span><span class="level-item">Updated&nbsp;<time dateTime="2023-09-18T14:43:08.066Z" title="2023/9/18 10:43:08">2023-09-18</time></span><span class="level-item"><a class="link-muted" href="/categories/Blog/">-Blog</a></span><span class="level-item">a few seconds read (About 49 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">LU CS Workshop built</h1><div class="content"><p>Abstract:</p>
 <span id="more"></span>
 
 <p>THIS is the first conference note for our workshop, here we have the following conclusions:</p>
@@ -159,206 +39,48 @@
 <li>Make a detailed plan for long term career.</li>
 <li>Decide a second organizer for this workshop.</li>
 </ol>
-
-      
-    
-    </div>
-	
-  </div>
-  
-    
-<nav id="article-nav">
-  
-  <hr>
-  
-    <a href="/2023/09/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-
-    
-
-
-
-					<div class="date">
-							<hr style="border-top: 1px dashed #f0f0f0;">
-							  <div class="article-meta">
-    Category: 
-    <a class="article-category-link" href="/categories/Blog/">-Blog</a>
-
-  </div>
-
-
-			
-					</div>
-					<div class="date">
-					  <div class="tags">
-    Tags: 
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Teambuilding-Workshop/" rel="tag">-Teambuilding -Workshop</a></li></ul>
-
-  </div>
-
-
-
-					</div>
-					
-                </div>
-				<hr>
-        </div>
-	</div>	
-</section>
-
-<section id="blog" class="blog" style="color: #002D54; font-weight: bold;">
-	<div class="container post-content">
-        <div class="row">
-            <div class="col-lg-12">
-				<script id="dsq-count-scr" src="//hexothemes.disqus.com/count.js" async></script>
-               <div id="disqus_thread">
-					<script>
-
-					/**
-					*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-					*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-					/*
-					var disqus_config = function () {
-					this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-					this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-					};
-					*/
-					(function() { // DON'T EDIT BELOW THIS LINE
-					var d = document, s = d.createElement('script');
-					s.src = 'https://hexothemes.disqus.com/embed.js';
-					s.setAttribute('data-timestamp', +new Date());
-					(d.head || d.body).appendChild(s);
-					})();
-					</script>
-					<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
-                            
-            </div>
-        </div>
-	</div>
-	<hr>
-</section>	
-		
-		  <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h4>Location <span class="label label-default">I'm here</span>
-                        </h4>
-                        <p class="white">1234 Main Street, Toronto<br>Ontario, Canada</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h4>Collaborate with me <span class="label label-default">let's connect</span>
-                        </h4>
-                        <ul class="list-inline">
-							<li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-twitter"></i></a>
-                            </li>
-							 <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-gitlab"></i></a>
-                            </li> 
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-bitbucket"></i></a>
-                            </li>
-						</ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h4>About me <span class="label label-default">In nutshell</span>
-                        </h4>
-                        <p class="white">Personal is a great Hexo theme to have for your blog. It is easy to set up and maintain.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <p class="black">Copyright &copy; Personal 2017</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <p class="black">Made by <a href="http://www.iblogger.ca" target="_blank">iBlogger</a> with <i class="fa fa-heart" style="color:#DF0101;"></i> In Toronto, Canada. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</script>
-
-    <!-- jQuery -->
-	
-<script src="/javascript/jquery.js"></script>
-
-
-    <!-- Bootstrap Core JavaScript -->
-	
-<script src="/javascript/bootstrap.min.js"></script>
-
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-	
-	<!-- Scroll to Top Button -->
-	<button href="#top" id="backToTopBtn" class="btn btn-md scroll"><span class="glyphicon glyphicon-chevron-up"></span></button>
-	  <script>
-	  $('#backToTopBtn').click(function(){
-			$('html,body').animate({scrollTop:0},'slow');return false;
-		});
-   </script>
-      <script>
-   $(document).ready(function(){
-	
-	//Check to see if the window is top if not then display button
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 100) {
-			$('.scroll').fadeIn();
-		} else {
-			$('.scroll').fadeOut();
-		}
-	});
-	
-	//Click event to scroll to top
-	$('.scroll').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
-	
-});
-   </script>
-
-
-
-
-
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-	</div>
-</body>
-</html>
+</div><div class="article-licensing box"><div class="licensing-title"><p>LU CS Workshop built</p><p><a href="http://example.com/2023/09/15/LU-CS-Workshop-built/">http://example.com/2023/09/15/LU-CS-Workshop-built/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Guangtian</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2023-09-15</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2023-09-18</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Teambuilding-Workshop/">-Teambuilding -Workshop</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2023/09/15/hello-world/"><span class="level-item">Hello World</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="notification is-danger">You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.</div></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="Guangtian"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Guangtian</p><p class="is-size-6 is-block">Your title</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Sudbury, ON.</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Category</p><a href="/categories"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tag</p><a href="/tags"><p class="title">1</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/guangtian0330" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/guangtian0330"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Blog/"><span class="level-start"><span class="level-item">-Blog</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-09-15T19:38:54.000Z">2023-09-15</time></p><p class="title"><a href="/2023/09/15/LU-CS-Workshop-built/">LU CS Workshop built</a></p><p class="categories"><a href="/categories/Blog/">-Blog</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2023-09-15T19:32:07.973Z">2023-09-15</time></p><p class="title"><a href="/2023/09/15/hello-world/">Hello World</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/"><span class="level-start"><span class="level-item">2023</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Teambuilding-Workshop/"><span class="tag">-Teambuilding -Workshop</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="Guangtian&#039;s BLOG" height="28"></a><p class="is-size-7"><span>&copy; 2023 Guangtian</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
